@@ -15,15 +15,15 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide6" className="btn bg-orange-700 btn-circle mr-5">❮</a> 
-                <a href="#slide2" className="btn bg-orange-700 btn-circle">❯</a>
+                <a href="#slide6" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide2" className="btn bg-[#FF3811] btn-circle">❯</a>
                 </div>
             </div> 
             <div id="slide2" className="carousel-item relative w-full">
@@ -34,15 +34,15 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide1" className="btn bg-orange-700 btn-circle mr-5">❮</a> 
-                <a href="#slide3" className="btn bg-orange-700 btn-circle">❯</a>
+                <a href="#slide1" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide3" className="btn bg-[#FF3811] btn-circle">❯</a>
                 </div>
             </div> 
             <div id="slide3" className="carousel-item relative w-full">
@@ -53,15 +53,15 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide2" className="btn btn-circle mr-5">❮</a> 
-                <a href="#slide4" className="btn btn-circle mr-5">❯</a>
+                <a href="#slide2" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide4" className="btn bg-[#FF3811] btn-circle mr-5">❯</a>
                 </div>
             </div> 
             <div id="slide4" className="carousel-item relative w-full">
@@ -72,15 +72,15 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide3" className="btn btn-circle mr-5">❮</a> 
-                <a href="#slide5" className="btn btn-circle mr-5">❯</a>
+                <a href="#slide3" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide5" className="btn bg-[#FF3811] btn-circle mr-5">❯</a>
                 </div>
             </div>
             <div id="slide5" className="carousel-item relative w-full">
@@ -91,7 +91,7 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
@@ -99,8 +99,8 @@ const Banner = () => {
 
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide4" className="btn btn-circle mr-5">❮</a> 
-                <a href="#slide6" className="btn btn-circle mr-5">❯</a>
+                <a href="#slide4" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide6" className="btn bg-[#FF3811] btn-circle mr-5">❯</a>
                 </div>
             </div>
             <div id="slide6" className="carousel-item relative w-full">
@@ -111,15 +111,15 @@ const Banner = () => {
                         <h2 className='text-6xl font-bold'>Affordable Price For Car Servicing</h2>
                         <p>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <div>
-                            <button className=' bg-orange-600 text-white px-4 py-3 rounded-md border-none'>Discover More</button>
+                            <button className=' bg-[#FF3811] text-white px-4 py-3 rounded-md border-none'>Discover More</button>
                             <button className='btn btn-outline  rounded-md ml-4 border-white border-2 text-white font-semibold lowercase'>Latest Project</button>
                         </div>
                     </div>
                 </div>
 
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                <a href="#slide5" className="btn btn-circle mr-5">❮</a> 
-                <a href="#slide1" className="btn btn-circle mr-5">❯</a>
+                <a href="#slide5" className="btn bg-[#FF3811] btn-circle mr-5">❮</a> 
+                <a href="#slide1" className="btn bg-[#FF3811] btn-circle mr-5">❯</a>
                 </div>
             </div>
         </div>
