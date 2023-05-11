@@ -17,31 +17,37 @@ const Header = () => {
             <div className='relative flex items-center justify-between'>
                 {/* Logo Section */}
                 <Link to='/' className='inline-flex items-center'>
-                    <img className=' h-14 w-24' src={logo} alt="" />
+                    <img className=' h-20' src={logo} alt="" />
                 </Link>
 
                 {/* Nav Items Section */}
-                <ul className='items-center hidden space-x-8 lg:flex text-lg'>
+                <ul className='items-center hidden space-x-12 lg:flex text-lg'>
                 
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                    <Link to="/about">Services</Link>
+                </li>
+                <li>
+                    <Link to="/about">Blog</Link>
+                </li>
+                <li>
+                    <Link to="/about">Contact</Link>
                 </li>
                 
                 </ul>
 
                 <div className='flex justify-center items-center gap-3'>
-                    <img className='w-11 h-11 rounded-full' src=''  alt="" />
+                    {/* <img className='w-11 h-11 rounded-full' src=''  alt="" /> */}
                     
-                    <button className='btn bg-orange-400 border-none'>Logout</button> :
+                    
 
                     <Link to='/login' className='inline-flex md:block items-center'>
-                    <button className='btn bg-orange-400 border-none'>Login</button>
+                    <button className='btn btn-outline btn-error'>Appointment</button>
                     </Link>
                 </div>
 
@@ -101,9 +107,7 @@ const Header = () => {
                             </Link>
                             </li>
                         </ul>
-                        <Link to='/register' className='inline-flex mt-5 items-center  transition-colors duration-200 hover:text-blue-400'>
-                            <button className='btn'>Register</button>
-                        </Link>
+                        
                         </nav>
                     </div>
                     </div>
