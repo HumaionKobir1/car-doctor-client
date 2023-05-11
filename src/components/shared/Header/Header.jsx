@@ -9,9 +9,8 @@ import { useState } from 'react';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
-
+    
     return (
-
         <div className='w-full md:w-5/6 mx-auto px-3'>
         <div className=' py-5 mx-auto '>
             <div className='relative flex items-center justify-between'>
