@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import img from '../../../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../../Providers/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 const SignUp = () => {
 
     const {createUser} = useContext(AuthContext);
@@ -18,9 +19,24 @@ const SignUp = () => {
         .then(result => {
             const user = result.user;
             console.log(user)
+            updateUserData(result.user, name)
         })
         .catch(error => console.log(error));
     }
+
+    const updateUserData = (user, name, photoUrl) => {
+        updateProfile(user, {
+            displayName: name,
+            photoURL: photoUrl
+        })
+        .then(()=>{
+            console.log('user name updated')
+        })
+        .catch(error => {
+            console.log(error.message)
+        })
+    }
+
     return (
         <div>
             
