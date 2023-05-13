@@ -5,11 +5,19 @@ import {
     Bars3Icon,
     XMarkIcon,
   } from '@heroicons/react/24/solid'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../../Providers/AuthProvider';
 
 const Header = () => {
+    const {user, logOut} = useContext(AuthContext);
+
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     
+    const handleLogOut = () => {
+        logOut()
+        .then()
+        .then(error => console.log(error.message))
+    }
     return (
         <div className='w-full md:w-5/6 mx-auto px-3'>
         <div className=' py-5 mx-auto '>
@@ -37,6 +45,13 @@ const Header = () => {
                 <li>
                     <Link to="/about">Contact</Link>
                 </li>
+                {user? <li>
+                    <button onClick={handleLogOut}>Log Out</button>
+                </li>
+                :
+                <li>
+                    <Link to="/login">Login</Link>
+                </li>}
                 
                 </ul>
 
@@ -45,7 +60,7 @@ const Header = () => {
                     
                     
 
-                    <Link to='/login' className='inline-flex md:block items-center'>
+                    <Link to='/' className='inline-flex md:block items-center'>
                     <button className='btn btn-outline btn-error'>Appointment</button>
                     </Link>
                 </div>
