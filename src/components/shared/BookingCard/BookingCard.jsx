@@ -1,12 +1,13 @@
 
-const BookingCard = ({book}) => {
-    const {service
-        , img, date, price} = book;
+const BookingCard = ({book, handleDelete}) => {
+    const {service, img, date, price, _id} = book;
+
+        
     return (
         <div className="md:flex md:w-5/6 px-3 my-10 mx-auto justify-center md:justify-between items-center w-full bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="flex gap-3">
                 <div className="grid items-center justify-center">
-                    <button className="bg-slate-900 rounded-[100%] text-white px-3 py-1 mr-3">x</button>
+                    <button onClick={() => handleDelete(_id)} className="bg-slate-900 rounded-[100%] text-white px-3 py-1 mr-3">x</button>
                 </div>
                 <div className="py-2">
                     <img className="w-36 h-36 rounded-lg" src={img} alt="" />
