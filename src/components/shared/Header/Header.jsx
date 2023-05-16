@@ -16,7 +16,7 @@ const Header = () => {
     const handleLogOut = () => {
         logOut()
         .then(()=>{
-            localStorage.removeItem('car-access-token')
+            
         })
         .then(error => {
             console.log(error.message);
