@@ -1,11 +1,12 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import BookingCard from "../../shared/BookingCard/BookingCard";
+import { useNavigate } from "react-router-dom";
 
 const Bookings = () => {
     const {user} = useContext(AuthContext);
     const [bookings, setBooking] = useState([]);
-
+    const navigate = useNavigate();
     const url = `http://localhost:5000/bookings?email=${user?.email}`;
 
     
@@ -17,8 +18,16 @@ const Bookings = () => {
             }
         })
         .then(res => res.json())
-        .then(data => setBooking(data))
-    }, [url]);
+        .then(data => {
+            if(!data.error){
+                setBooking(data);
+            }
+            else{
+                // logout and then navigate
+                navigate('/')
+            }
+        })
+    }, [url, navigate]);
 
     
     

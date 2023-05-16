@@ -18,7 +18,9 @@ const Header = () => {
         .then(()=>{
             localStorage.removeItem('car-access-token')
         })
-        .then(error => console.log(error))
+        .then(error => {
+            console.log(error.message);
+        })
     }
     return (
         <div className='w-full md:w-5/6 mx-auto px-3'>
