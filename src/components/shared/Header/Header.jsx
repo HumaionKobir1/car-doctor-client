@@ -15,8 +15,10 @@ const Header = () => {
     
     const handleLogOut = () => {
         logOut()
-        .then()
-        .then(error => console.log(error.message))
+        .then(()=>{
+            localStorage.removeItem('car-access-token')
+        })
+        .then(error => console.log(error))
     }
     return (
         <div className='w-full md:w-5/6 mx-auto px-3'>

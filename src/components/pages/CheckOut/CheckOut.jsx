@@ -52,7 +52,7 @@ const CheckOut = () => {
         <div>
             
         <form className="bg-gray-100 rounded-lg shadow-lg md:px-24 p-6 w-full md:w-5/6 mx-auto px-3 md:mt-14 mt-8 mb-12" onSubmit={handleBookService}>
-            <h3 className='text-2xl text-orange-400 font-serif text-center'>Get in Touch Now</h3>
+            <h3 className='text-2xl text-orange-400 font-serif text-center'>Get in Confirm Now</h3>
             <h1 className='text-center text-5xl font-bold'>{title}</h1>
 
           <div className='md:grid md:grid-cols-2 justify-center gap-5 mb-3 md:mt-16 mt-10'>

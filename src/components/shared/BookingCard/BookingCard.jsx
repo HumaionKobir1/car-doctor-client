@@ -1,6 +1,6 @@
 
-const BookingCard = ({book, handleDelete}) => {
-    const {service, img, date, price, _id} = book;
+const BookingCard = ({book, handleDelete, handleBookingConfirm}) => {
+    const {service, img, date, _id, email, status} = book;
 
         
     return (
@@ -21,7 +21,7 @@ const BookingCard = ({book, handleDelete}) => {
             </div>
 
             <div>
-                <p className="text-lg font-semibold">${price}</p>
+                <p className="text-lg font-semibold">{email}</p>
             </div>
 
             <div>
@@ -29,7 +29,15 @@ const BookingCard = ({book, handleDelete}) => {
             </div>
 
             <div className="grid justify-center items-center">
-            <button className="bg-[#FF3811] text-white px-5 py-3 rounded-md border-none">Pending</button>
+            { status === 'confirm' ? 
+            
+             <span className="border-green-700 text-[#29B170] border none px-5 py-3 rounded-md ">Approved</span>
+            
+            :
+            
+            <button onClick={()=> handleBookingConfirm(_id)} className="bg-[#FF3811] text-white px-5 py-3 rounded-md border-none">Please Confirm</button>
+            
+            }
             </div>
         </div>
     );
